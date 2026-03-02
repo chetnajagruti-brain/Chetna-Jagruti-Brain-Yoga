@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery - Photos from Brain Yoga & Chetna Jagruti centers, student activities, and events.">
+    <title>Gallery - Brain Yoga & Chetna Jagruti</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 50px 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 1;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: #ddd;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            padding: 20px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        
+        .category-header {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('./assets/images/bg-3.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 0;
+            pointer-events: none;
+        }
+        .page-wrapper { position: relative; z-index: 1; }
+    </style>
+    <div class="page-wrapper">    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    Brain Yoga
+                    <span class="logo-tagline">Every Child is a Born Genius</span>
+                </a>
+                <button class="menu-toggle">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="dropdown">
+                            <a href="programs.html">Programs ▼</a>
+                            <div class="dropdown-content">
+                                <a href="dmit.html">DMIT Test</a>
+                                <a href="brain-yoga.html">Brain Yoga</a>
+                                <a href="chetna-jagruti.html">Chetna Jagruti</a>
+                                <a href="study-yoga.html">Study Yoga</a>
+                            </div>
+                        </li>
+                        <li><a href="outcomes.html">Outcomes</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p class="hero-tagline">A Glimpse Into Our World</p>
+            <p style="color: rgba(255,255,255,0.9);">Photos from our centers, student activities, and transformational moments</p>
+        </div>
+    </section>
+
+    <!-- GALLERY CONTENT -->
+    <section>
+        <div class="container">
+            <h2>Center & Classes</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">🏫</div>
+                    <div class="gallery-caption">
+                        <h3>Satara Center</h3>
+                        <p>Main training facility with modern classrooms</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">🏢</div>
+                    <div class="gallery-caption">
+                        <h3>Mahad Center</h3>
+                        <p>State-of-the-art training facility</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">🏛️</div>
+                    <div class="gallery-caption">
+                        <h3>Pune Center</h3>
+                        <p>Premium facility in the city</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">🎓</div>
+                    <div class="gallery-caption">
+                        <h3>Training Room</h3>
+                        <p>Interactive learning environment</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="category-header">Student Activities</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">🧘</div>
+                    <div class="gallery-caption">
+                        <h3>Brain Yoga Session</h3>
+                        <p>Students practicing brain exercises</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">👥</div>
+                    <div class="gallery-caption">
+                        <h3>Group Activities</h3>
+                        <p>Collaborative learning sessions</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">🎤</div>
+                    <div class="gallery-caption">
+                        <h3>Workshop Session</h3>
+                        <p>Interactive workshops and training</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">📊</div>
+                    <div class="gallery-caption">
+                        <h3>DMIT Testing</h3>
+                        <p>Aptitude assessment sessions</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="category-header">Events & Celebrations</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">🎉</div>
+                    <div class="gallery-caption">
+                        <h3>Success Celebration</h3>
+                        <p>Recognizing student achievements</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">🏆</div>
+                    <div class="gallery-caption">
+                        <h3>Awards Ceremony</h3>
+                        <p>Celebrating top performers</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">📸</div>
+                    <div class="gallery-caption">
+                        <h3>Program Launch</h3>
+                        <p>New program introductions</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">👨‍👩‍👧‍👦</div>
+                    <div class="gallery-caption">
+                        <h3>Family Event</h3>
+                        <p>Parent-student engagement</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="category-header">Success Stories</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">⭐</div>
+                    <div class="gallery-caption">
+                        <h3>Top Scorer</h3>
+                        <p>Student achieving 95%+ grades</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">🎯</div>
+                    <div class="gallery-caption">
+                        <h3>Career Clarity</h3>
+                        <p>Student with clear life direction</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">💪</div>
+                    <div class="gallery-caption">
+                        <h3>Confidence Builder</h3>
+                        <p>Student transformation story</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">🚀</div>
+                    <div class="gallery-caption">
+                        <h3>Elite Performer</h3>
+                        <p>Outstanding achievement</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="category-header">Student Testimonials & Moments</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">😊</div>
+                    <div class="gallery-caption">
+                        <h3>Happy Students</h3>
+                        <p>Enjoying learning experience</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">📚</div>
+                    <div class="gallery-caption">
+                        <h3>Learning Together</h3>
+                        <p>Group study sessions</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">🌟</div>
+                    <div class="gallery-caption">
+                        <h3>Student Excellence</h3>
+                        <p>Achieving their potential</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); display: flex; align-items: center; justify-content: center; font-size: 4em;">🎊</div>
+                    <div class="gallery-caption">
+                        <h3>Celebration</h3>
+                        <p>Milestone achievements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAPTION SECTION -->
+    <section class="bg-light">
+        <div class="container">
+            <h2>Our Community</h2>
+            <p style="font-size: 1.1em; text-align: center; margin-bottom: 30px;">
+                Brain Yoga & Chetna Jagruti is built on the foundation of student success and community support. Every photo represents the journey of a student discovering their potential and transforming their life.
+            </p>
+            <p style="font-size: 1.1em; text-align: center;">
+                When you join our programs, you become part of a community dedicated to unlocking the genius within every child. Success is not just about grades—it's about confidence, clarity, and discovering your true potential.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-gradient">
+        <div class="container text-center">
+            <h2 style="color: white;">Be Part of Our Success Stories</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.2em; margin-bottom: 30px;">
+                Join our community and start your transformation journey
+            </p>
+            <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Brain Yoga & Chetna Jagruti</h4>
+                    <p>Unlocking the genius in every child through proven brain development programs.</p>
+                    <p style="margin-top: 20px; font-size: 0.85em; opacity: 0.8;">Every Child is a Born Genius</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="programs.html">Programs</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <span>📍</span>
+                        <span>Satara, Mahad, Pune</span>
+                    </div>
+                    <div class="contact-info">
+                        <span>📱</span>
+                        <a href="https://wa.me/919175316756">+91 91753 16756</a>
+                    </div>
+                    <div class="contact-info">
+                        <span>📧</span>
+                        <a href="mailto:chetnajagruti.work@gmail.com">chetnajagruti.work@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <a href="dmit.html">DMIT Test</a>
+                    <a href="brain-yoga.html">Brain Yoga</a>
+                    <a href="chetna-jagruti.html">Chetna Jagruti</a>
+                    <a href="study-yoga.html">Study Yoga</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Brain Yoga & Chetna Jagruti. All rights reserved. | Every Child is a Born Genius</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

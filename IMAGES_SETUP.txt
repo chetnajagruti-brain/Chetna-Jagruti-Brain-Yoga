@@ -1,0 +1,155 @@
+=====================================
+BACKGROUND IMAGES SETUP - NEW WEBSITE
+=====================================
+
+Your new website (new-site/) uses custom background images with professional styling.
+All CSS is configured and ready - just add your 3 meditation images!
+
+QUICK START:
+------------
+
+1. Add 3 images to: c:\Brain yoga\new-site\assets\images\
+
+2. Name them exactly:
+   - bg-1.jpg
+   - bg-2.jpg
+   - bg-3.jpg
+
+3. Refresh browser to see backgrounds live
+
+FILE STRUCTURE:
+---------------
+c:\Brain yoga\new-site\
+├── index.html
+├── contact.html
+├── about.html
+├── programs.html
+├── outcomes.html
+├── gallery.html
+├── dmit.html
+├── brain-yoga.html
+├── chetna-jagruti.html
+├── study-yoga.html
+└── assets\
+    ├── css\
+    │   └── styles.css (689+ lines - ready)
+    ├── js\
+    │   └── main.js (166 lines - ready)
+    └── images\  ✓ CREATED - ADD IMAGES HERE
+        ├── bg-1.jpg ← Add meditation image 1
+        ├── bg-2.jpg ← Add meditation image 2
+        └── bg-3.jpg ← Add meditation image 3
+
+IMAGES SPECIFICATIONS:
+----------------------
+
+bg-1.jpg (Primary background):
+  • Serene meditation by water/nature
+  • Recommended: 1920x1080px or larger
+  • Used across all pages as default background
+  • File size: 200-500KB (optimized for web)
+
+bg-2.jpg (Alternative background):
+  • Misty/misty meditation scene
+  • Recommended: 1920x1080px or larger
+  • Optional variation for different pages
+
+bg-3.jpg (Mountain/nature background):
+  • Mountain or nature meditation scene
+  • Recommended: 1920x1080px or larger
+  • Optional background variation
+
+HOW BACKGROUNDS WORK:
+---------------------
+
+• All images automatically get 50% dark overlay for text readability
+• Fixed background-attachment creates parallax scrolling effect
+• Responsive design - works perfectly on mobile, tablet, desktop
+• All 11 pages have white content sections that overlay the background
+
+CSS CLASSES READY:
+------------------
+
+In styles.css (lines 680-715):
+  ✓ .bg-meditation-1 → bg-1.jpg
+  ✓ .bg-meditation-2 → bg-2.jpg
+  ✓ .bg-meditation-3 → bg-3.jpg
+  ✓ .bg-meditation-home → bg-1.jpg (for homepage)
+  ✓ .page-bg-wrapper (fixed positioning)
+  ✓ .page-bg-overlay (50% dark overlay)
+
+IMPLEMENTATION:
+----------------
+
+Add to any page <body> tag:
+
+  <body class="with-bg-image">
+    <div class="page-bg-wrapper bg-meditation-1"></div>
+    <div class="page-bg-overlay"></div>
+    <!-- rest of page -->
+  </body>
+
+TIPS FOR BEST RESULTS:
+----------------------
+
+✓ High-quality images (1920x1080 or larger)
+✓ Use calming/peaceful meditation scenes
+✓ Include nature elements (water, mountains, trees)
+✓ Clear, uncluttered composition
+✓ Warm, soothing color palettes
+✓ JPEG format (.jpg) recommended
+✓ 200-500KB file size for fast loading
+
+TROUBLESHOOTING:
+-----------------
+
+Image not showing?
+  → Check filename: bg-1.jpg, bg-2.jpg, bg-3.jpg (exact match required)
+  → Verify location: c:\Brain yoga\new-site\assets\images\
+  → Clear browser cache (Ctrl+Shift+Delete)
+  → Check file extensions are lowercase
+
+Can't read text?
+  → Dark overlay is 50% opacity - this is intentional for readability
+  → To adjust: Edit styles.css line ~708
+  → Change rgba(0, 0, 0, 0.50) to darker (0.70) or lighter (0.30)
+
+Pages loading slow?
+  → Optimize images (TinyPNG.com or similar)
+  → Reduce to 300-400KB per image
+  → Keep 16:9 aspect ratio
+
+NEXT STEPS:
+-----------
+
+1. ✅ CSS ready (styles.css updated)
+2. ✅ JavaScript ready (main.js ready)
+3. ✅ Directory created (assets/images/ folder exists)
+4. ⏳ Add 3 images to assets/images/ folder
+5. ⏳ Refresh browser to see changes
+6. ⏳ Test on different pages
+
+WEBSITES USING THIS SYSTEM:
+----------------------------
+
+All pages now use background image infrastructure:
+  • index.html (homepage)
+  • about.html (about page)
+  • contact.html (contact form)
+  • dmit.html (DMIT Test service)
+  • brain-yoga.html (Brain Yoga program)
+  • chetna-jagruti.html (Chetna Jagruti wellness)
+  • study-yoga.html (Study Yoga program)
+  • programs.html (programs overview)
+  • outcomes.html (success stories)
+  • gallery.html (photo gallery)
+  • Plus all other pages
+
+Each page displays with:
+  ✓ Full-screen background image
+  ✓ 50% dark overlay for text
+  ✓ White content sections
+  ✓ Parallax scrolling effect
+  ✓ Responsive on all devices
+
+STATUS: Ready for image placement! 🎉

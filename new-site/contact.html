@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Brain Yoga & Chetna Jagruti - Reach out to us for more information about our programs.">
+    <title>Contact Us - Brain Yoga & Chetna Jagruti</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('./assets/images/bg-2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 0;
+            pointer-events: none;
+        }
+        .page-wrapper { position: relative; z-index: 1; }
+    </style>
+    <div class="page-wrapper">    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    Brain Yoga
+                    <span class="logo-tagline">Every Child is a Born Genius</span>
+                </a>
+                <button class="menu-toggle">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="dropdown">
+                            <a href="programs.html">Programs ▼</a>
+                            <div class="dropdown-content">
+                                <a href="dmit.html">DMIT Test</a>
+                                <a href="brain-yoga.html">Brain Yoga</a>
+                                <a href="chetna-jagruti.html">Chetna Jagruti</a>
+                                <a href="study-yoga.html">Study Yoga</a>
+                            </div>
+                        </li>
+                        <li><a href="outcomes.html">Outcomes</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="hero-tagline">Get in Touch With Us</p>
+            <p style="color: rgba(255,255,255,0.9);">Have questions? We're here to help. Reach out to us anytime.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section>
+        <div class="container">
+            <div class="two-column">
+                <!-- CONTACT FORM -->
+                <div class="reveal">
+                    <h2>Send us a Message</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                placeholder="Enter your full name" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="Enter your phone number (10 digits)" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <select id="city" name="city" required>
+                                <option value="">Select City</option>
+                                <option value="Satara">Satara</option>
+                                <option value="Mahad">Mahad</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="DMIT Test">DMIT Test</option>
+                                <option value="Brain Yoga">Brain Yoga</option>
+                                <option value="Chetna Jagruti">Chetna Jagruti</option>
+                                <option value="Study Yoga">Study Yoga</option>
+                                <option value="General Enquiry">General Enquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input 
+                                type="date" 
+                                id="date" 
+                                name="date"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message / Additional Details</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="4" 
+                                placeholder="Tell us more about your inquiry..."
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; cursor: pointer;">
+                            📱 Send via WhatsApp
+                        </button>
+                        <p style="font-size: 0.85em; color: #666; margin-top: 10px;">
+                            Click to open WhatsApp and send your details directly
+                        </p>
+                    </form>
+                </div>
+
+                <!-- CONTACT INFORMATION -->
+                <div class="reveal">
+                    <h2>Contact Information</h2>
+                    
+                    <div style="background: #f8f9fa; padding: 30px; border-radius: 8px; margin-bottom: 30px;">
+                        <h3 style="margin-top: 0; color: #667eea;">Our Centers</h3>
+                        
+                        <div style="margin-bottom: 25px;">
+                            <h4 style="margin-bottom: 10px;">📍 Satara Center</h4>
+                            <p style="margin: 0;">Primary Center</p>
+                            <p style="margin: 0; color: #666; font-size: 0.9em;">Address: Satara, Maharashtra</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 25px;">
+                            <h4 style="margin-bottom: 10px;">📍 Mahad Center</h4>
+                            <p style="margin: 0;">Branch Center</p>
+                            <p style="margin: 0; color: #666; font-size: 0.9em;">Address: Mahad, Maharashtra</p>
+                        </div>
+                        
+                        <div>
+                            <h4 style="margin-bottom: 10px;">📍 Pune Center</h4>
+                            <p style="margin: 0;">Premium Center</p>
+                            <p style="margin: 0; color: #666; font-size: 0.9em;">Address: Pune, Maharashtra</p>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 30px; border-radius: 8px;">
+                        <h3 style="margin-top: 0; color: #667eea;">Get In Touch</h3>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <p style="margin-bottom: 8px; font-weight: 600;">📱 WhatsApp - Primary</p>
+                            <a href="https://wa.me/919175316756" style="color: #0288d1; text-decoration: none; font-size: 1.05em;">
+                                +91 91753 16756
+                            </a>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <p style="margin-bottom: 8px; font-weight: 600;">📱 WhatsApp - Alternate</p>
+                            <a href="https://wa.me/919545098002" style="color: #0288d1; text-decoration: none; font-size: 1.05em;">
+                                +91 95450 98002
+                            </a>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <p style="margin-bottom: 8px; font-weight: 600;">📧 Email</p>
+                            <a href="mailto:chetnajagruti.work@gmail.com" style="color: #0288d1; text-decoration: none; font-size: 1.05em;">
+                                chetnajagruti.work@gmail.com
+                            </a>
+                        </div>
+
+                        <div style="padding-top: 20px; border-top: 1px solid #ddd;">
+                            <p style="margin-top: 0; margin-bottom: 8px; font-weight: 600;">⏰ Response Time</p>
+                            <p style="margin: 0; color: #666;">Usually responds within 2-4 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="bg-light">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item reveal">
+                    <h3 class="faq-question">
+                        🤔 How do I get started with the programs?
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Simply fill out the contact form above or call us on WhatsApp at +91 91753 16756. Our counselor will guide you through the process, help you choose the right program, and answer all your questions. You can also visit us at any of our centers for a personal consultation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <h3 class="faq-question">
+                        ❓ What is the DMIT Test?
+                    </h3>
+                    <div class="faq-answer">
+                        <p>DMIT (Dermatoglyphics Multiple Intelligence Test) is a scientific analysis of fingerprints that reveals your natural talents, abilities, and intelligence types. It helps identify your strengths, learning style, and suitable career paths scientifically and non-invasively.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <h3 class="faq-question">
+                        👧 What age groups do you serve?
+                    </h3>
+                    <div class="faq-answer">
+                        <p>We serve students from elementary school to college level. Each program is customized based on the student's age and academic level. Even adults benefit from Brain Yoga and life skills training. Contact us to know which program is best for your age group.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <h3 class="faq-question">
+                        💰 What are the program fees?
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Program fees vary based on the duration, format, and location. We offer flexible options including group classes, batch programs, and personalized sessions. Contact us directly for detailed pricing information and available packages. Pricing on enquiry only.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <h3 class="faq-question">
+                        🗓️ What is the duration of each program?
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Program duration varies: Brain Yoga (4-12 weeks), Chetna Jagruti (12-24 weeks), Study Yoga (4-12 weeks or exam-specific), and DMIT Test (single session plus analysis). Each program can be customized to fit your schedule.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <h3 class="faq-question">
+                        📍 Can I attend programs online?
+                    </h3>
+                    <div class="faq-answer">
+                        <p>We offer both in-person and hybrid formats for most programs. Some techniques are best practiced in-person, while theory and guidance can be online. Contact us to discuss the format that works best for you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <h3 class="faq-question">
+                        🧠 How will I see results from Brain Yoga?
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Most students notice improvements in focus and mental clarity within 2-3 weeks. Significant improvements in memory and stress levels typically appear within 4-6 weeks. Results depend on regular practice and consistent effort.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <h3 class="faq-question">
+                        📚 How does Study Yoga improve exam performance?
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Study Yoga combines brain optimization techniques with proven study strategies. Students learn effective study methods, time management, exam techniques, and stress management. This results in 30-50% faster learning and better exam performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section>
+        <div class="container">
+            <h2>Why Choose Brain Yoga & Chetna Jagruti?</h2>
+            <div class="card-grid">
+                <div class="card reveal">
+                    <div class="card-icon">✓</div>
+                    <h3>Proven Results</h3>
+                    <p>2500+ students transformed with documented success stories and improved grades.</p>
+                </div>
+                
+                <div class="card reveal">
+                    <div class="card-icon">✓</div>
+                    <h3>Expert Trainers</h3>
+                    <p>Experienced professionals with deep knowledge of brain development and learning science.</p>
+                </div>
+                
+                <div class="card reveal">
+                    <div class="card-icon">✓</div>
+                    <h3>Holistic Approach</h3>
+                    <p>Programs address brain development, academics, personality, and life skills comprehensively.</p>
+                </div>
+                
+                <div class="card reveal">
+                    <div class="card-icon">✓</div>
+                    <h3>Personalized Programs</h3>
+                    <p>Each program is customized based on individual needs, abilities, and learning style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-gradient">
+        <div class="container text-center">
+            <h2 style="color: white;">Ready to Begin Your Journey?</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.2em; margin-bottom: 30px;">
+                Contact us today and take the first step towards unlocking your potential
+            </p>
+            <a href="https://wa.me/919175316756" class="btn btn-primary">
+                WhatsApp Us Now
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Brain Yoga & Chetna Jagruti</h4>
+                    <p>Unlocking the genius in every child through proven brain development programs.</p>
+                    <p style="margin-top: 20px; font-size: 0.85em; opacity: 0.8;">Every Child is a Born Genius</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="programs.html">Programs</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <span>📍</span>
+                        <span>Satara, Mahad, Pune</span>
+                    </div>
+                    <div class="contact-info">
+                        <span>📱</span>
+                        <a href="https://wa.me/919175316756">+91 91753 16756</a>
+                    </div>
+                    <div class="contact-info">
+                        <span>📧</span>
+                        <a href="mailto:chetnajagruti.work@gmail.com">chetnajagruti.work@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <a href="dmit.html">DMIT Test</a>
+                    <a href="brain-yoga.html">Brain Yoga</a>
+                    <a href="chetna-jagruti.html">Chetna Jagruti</a>
+                    <a href="study-yoga.html">Study Yoga</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Brain Yoga & Chetna Jagruti. All rights reserved. | Every Child is a Born Genius</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

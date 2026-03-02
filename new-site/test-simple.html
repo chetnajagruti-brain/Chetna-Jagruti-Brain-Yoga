@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Test - Simple</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+        }
+
+        body {
+            background-image: url('./assets/images/bg-1.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Dark overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            padding: 4rem 2rem;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.3em;
+            margin-bottom: 2rem;
+        }
+
+        .status {
+            background: rgba(0, 255, 0, 0.2);
+            border: 2px solid #00ff00;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .status.error {
+            background: rgba(255, 0, 0, 0.2);
+            border-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>🎵 Background Image Test</h1>
+        <p>You should see a meditation background behind this text.</p>
+        
+        <div class="status" id="status">
+            <p><strong>✓ Page loaded successfully</strong></p>
+            <p>Image path: <code>./assets/images/bg-1.jpeg</code></p>
+            <p id="img-status">Checking image...</p>
+        </div>
+
+        <p style="margin-top: 3rem; font-size: 1em;">
+            If background is visible: <a href="index.html" style="color: #ffff00; text-decoration: underline;">→ Go to Homepage</a>
+        </p>
+    </div>
+
+    <script>
+        // Check if image loads
+        const img = new Image();
+        img.onload = function() {
+            document.getElementById('img-status').innerHTML = '✓ Image loaded (171 KB)';
+        };
+        img.onerror = function() {
+            document.getElementById('img-status').innerHTML = '✗ Image FAILED to load!';
+            document.getElementById('status').classList.add('error');
+        };
+        img.src = './assets/images/bg-1.jpeg';
+
+        console.log('Page loaded');
+        console.log('Image path:', './assets/images/bg-1.jpeg');
+    </script>
+</body>
+</html>
